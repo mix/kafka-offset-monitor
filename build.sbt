@@ -32,3 +32,8 @@ assemblyMergeStrategy in assembly := {
     oldStrategy(x)
   }
 }
+
+val workaround = {
+	sys.props += "packaging.type" -> "jar"
+	()
+}
